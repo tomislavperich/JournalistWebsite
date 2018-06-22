@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hello world</title>
+        <link rel="stylesheet" href="/style.css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1>The <img src=""/> Eye</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Tech</a></li>
+                    <li><a href="">Politics</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <% articles.forEach(function(article) { %>
+                    <div class="contentItem">
+                        <a href="" class="image">
+                            <img src="<%= article.image %>"/>
+                        </a>
+                        <a class="contentTitle" href=""><%= article.title %></a>
+                        <h4 class="contentAuthor"><%= article.author %></h4>
+                        <p class="contentText"><%= lorem %></p>
+                        <a href="#">Read more</a>
+                        <hr class="weakDividerLarge">
+                    </div>
+                <% }) %>
+            </div>
+            
+            <div class="recent">
+                <h2><a href="">Recent news</a></h2>
+                <hr>
+                <% recent.forEach(function(recent) { %>
+                    <div class="recentItem">
+                        <a class="recentTitle" href=""><%= recent.title %></a>
+                        <p class="recentAuthor"><%= recent.author %></p>
+                        <p class="recentText"><%= lorem_small %></p>
+                        <a href="">Read more</a>
+                        <hr class="weakDivider">
+                    </div>
+                <% }) %>
+            </div>
+            
+            <div class="popular">
+                <h2><a href="">Popular news</a></h2>
+                <hr>
+                <% popular.forEach(function(popular) { %>
+                    <div class="popularItem">
+                        <a class="popularTitle" href=""><%= popular.title %></a>
+                        <p class="popularAuthor"><%= popular.author %></p>
+                        <p class="popularText"><%= lorem_small %></p>
+                        <a href="">Read more</a>
+                        <hr class="weakDivider">
+                    </div>
+                <% }) %>
+            </div>
+            
+            <div class="footer">
+                
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<div class="content">
+                <% for(var i = 0; i < articles.length; i++) { %>
+                <li>
+                    <%= articles[i].title %> - <strong><%= articles[i].author %></strong>
+                </li>
+                <% } %>
+                
+                <% articles.forEach(function(article) { %>
+                    <li>
+                        <%= article.title %> - <strong><%= article.author %></strong>
+                    </li>
+                <% }) %>
+            </div>
