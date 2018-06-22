@@ -1,11 +1,12 @@
 {
-  "name": "practice",
+  "name": "JournalistWebsite",
   "version": "1.0.0",
-  "description": "",
+  "description": "A journalistic-themed website written in ExpressJS w/ ejs templates for practice",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tomislav Peric",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
